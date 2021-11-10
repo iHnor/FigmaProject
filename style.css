@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 html {
     margin: 0;
 }
@@ -110,11 +111,11 @@ p {
     text-decoration-line: underline;
 }
 
-.About {
+section {
     padding-top: 25px;
     padding-left: 34px;
     padding-right: 29px;
-    padding-bottom: 8px;
+    padding-bottom: 24px;
 }
 
 .About h2 {
@@ -176,10 +177,6 @@ table {
 }
 
 .Portfolio {
-    padding-top: 25px;
-    padding-left: 34px;
-    padding-right: 32px;
-    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -201,7 +198,6 @@ table {
 .PhotoPortfolio {
     display: flex;
     padding-top: 26px;
-    padding-bottom: 24px;
 }
 
 .LeftSidePicture {
@@ -235,8 +231,6 @@ table {
 }
 
 .GetTouch {
-    padding-left: 34px;
-    padding-right: 32px;
     text-align: center;
 }
 
@@ -253,7 +247,6 @@ table {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding-bottom: 50px;
 }
 
 .LeftGroup a:first-child {
