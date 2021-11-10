@@ -63,6 +63,13 @@ p {
     line-height: 16px;
 }
 
+#menu {
+    width: 24px;
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 34px;
+}
+
 .HeroSelection {
     display: flex;
     position: relative;
@@ -259,6 +266,18 @@ table {
     text-decoration: none;
     color: #333333;
 }
-.RightGroup img{
+
+.LeftGroup p {
+    padding-bottom: 7px;
+}
+
+.RightGroup img {
     width: 24px;
+}
+
+@media only screen and (min-width: 896px) {
+    h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
