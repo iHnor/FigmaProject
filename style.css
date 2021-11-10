@@ -201,7 +201,7 @@ table {
     text-align: left;
 }
 
-.RigthSidePicture {
+.RightSidePicture {
     text-align: right;
 }
 
@@ -216,13 +216,13 @@ table {
     height: 113.01px;
 }
 
-.RigthSidePicture img:first-of-type {
+.RightSidePicture img:first-of-type {
     width: 123.69px;
     height: 113.01px;
     margin-bottom: 12px;
 }
 
-.RigthSidePicture img:last-child {
+.RightSidePicture img:last-child {
     width: 123.69px;
     height: 69.85px;
 }
@@ -231,4 +231,34 @@ table {
     padding-left: 34px;
     padding-right: 32px;
     text-align: center;
+}
+
+.GetTouch h2 {
+    padding-bottom: 25px;
+}
+
+.Links {
+    padding-bottom: 19px;
+}
+
+.Contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.LeftGroup a:first-child {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    outline: none;
+    text-decoration: none;
+    color: #333333;
+}
+.RightGroup img{
+    width: 24px;
 }
