@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 html {
     margin: 0;
 }
@@ -14,6 +13,7 @@ body {
     margin: 0;
     width: 100%;
     color: #333333;
+    background-color: #FFFFFF;
 }
 
 h1 {
@@ -64,14 +64,32 @@ p {
     line-height: 16px;
 }
 
-#menu {
-    width: 24px;
-    position: absolute;
-    margin-top: 39px;
-    margin-left: 34px;
+section {
+    padding-top: 36px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 24px;
 }
 
-.HeroSelection {
+#menuSmall {
+    width: 24px;
+    padding-top: 6px;
+    position: absolute;
+}
+
+a .icon-hamburger {
+    background-image: url(./image/hamburger.png);
+    background-size: 24px;
+    /* background-size: auto; */
+    padding-top: 6px;
+    /* position: absolute; */
+}
+
+#menuLarge {
+    display: none;
+}
+
+#HeroSelection {
     display: flex;
     position: relative;
     background-position: center;
@@ -85,59 +103,54 @@ p {
     text-align: center;
 }
 
-.HeroSelection::before {
+#HeroSelection::before {
     content: '';
     position: absolute;
+    margin-top: -36px;
+    margin-left: -34px;
+    margin-right: -34px;
+    margin-bottom: -24px;
     width: 100%;
     height: 100%;
     background: rgba(198, 108, 73, 0.4);
     z-index: -1;
 }
 
-.HeroSelection h1 {
-    padding-top: 36px;
-}
-
-.HeroSelection h3 {
+#HeroSelection h3 {
     padding-top: 50px;
 }
 
-.HeroSelection p:first-of-type {
+#HeroSelection p:first-of-type {
     padding-top: 13px;
     padding-bottom: 41px;
 }
 
-.HeroSelection p:last-of-type {
+#HeroSelection p:last-of-type {
     text-decoration-line: underline;
 }
 
-section {
-    padding-top: 25px;
-    padding-left: 34px;
-    padding-right: 29px;
-    padding-bottom: 24px;
+section:nth-child(odd) {
+    background-color: #FFFAF2;
 }
 
-.About h2 {
+#About h2 {
     text-align: center;
     padding-bottom: 19px;
 }
 
-.About p {
+#About p {
     font-size: 12px;
     line-height: 15px;
     text-align: justify;
 }
 
-.Skills {
-    background-color: #FFFAF2;
-    padding-top: 25px;
-    padding-left: 34px;
-    padding-right: 32px;
+#Skills {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.Skills img {
+#Skills img {
     width: 224px;
     padding-top: 25px;
     padding-bottom: 26px;
@@ -176,11 +189,11 @@ table {
     z-index: 1;
 }
 
-.Portfolio {
+#Portfolio {
     text-align: center;
 }
 
-.Portfolio p {
+#Portfolio p {
     font-style: normal;
     font-size: 12px;
 }
@@ -230,26 +243,57 @@ table {
     height: 69.85px;
 }
 
-.GetTouch {
+#GetTouch {
     text-align: center;
 }
 
-.GetTouch h2 {
+#GetTouch h2 {
     padding-bottom: 25px;
 }
 
-.Links {
-    padding-bottom: 19px;
+#resources a {
+    padding-bottom: 20px;
 }
 
-.Contacts {
+#social-networks a {
+    padding-bottom: 20px;
+}
+
+#resources {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    float: left;
+}
+
+#social-networks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    float: left;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
+    clear: left;
 }
 
-.LeftGroup a:first-child {
+/* a .icon-up{
+    background-image: url(./image/uppButton.png);
+    background-size: 24px;
+} */
+
+.contacts:first-child {
+    padding-top: 10px;
+}
+
+.contacts a {
+    display: block;
+    padding-bottom: 7px;
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: normal;
@@ -260,17 +304,132 @@ table {
     color: #333333;
 }
 
-.LeftGroup p {
-    padding-bottom: 7px;
-}
-
-.RightGroup img {
-    width: 24px;
-}
-
-@media only screen and (min-width: 896px) {
+@media only screen and (min-width: 992px) {
     h1 {
         font-size: 24px;
         line-height: 29px;
     }
+    h2 {
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 64px;
+        line-height: 78px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #menuSmall {
+        display: none;
+    }
+    /* #menuLarge {
+        display: block;        
+        float: right;
+    }
+    #menuLarge a {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 60px;
+    } */
+    section {
+        padding-top: 93px;
+        padding-left: 166px;
+        padding-right: 167px;
+        padding-bottom: 115px;
+    }
+    #HeroSelection {
+        height: 768px;
+        text-align: left;
+    }
+    #HeroSelection::before {
+        margin-top: -93px;
+        margin-left: -165px;
+        margin-right: -168px;
+        margin-bottom: -145px;
+        background: rgba(198, 108, 73, 0.3);
+    }
+    #HeroSelection h3 {
+        padding-top: 145px;
+    }
+    #HeroSelection p:first-of-type {
+        padding-top: 26px;
+        padding-bottom: 106px;
+    }
+    #About h2 {
+        text-align: left;
+        padding-bottom: 76px;
+    }
+    #About p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #Skills {
+        text-align: left;
+        flex-direction: row;
+    }
+    #Skills img {
+        width: 350px;
+        margin-right: 125px;
+        padding-top: 86px;
+    }
+    table {
+        padding-top: 86px;
+    }
+    .profile {
+        padding-bottom: 65px;
+    }
+    .groupGraph, .groupTools {
+        padding-bottom: 20px;
+    }
+    #Portfolio {
+        text-align: left;
+    }
+    #Portfolio h2 {
+        padding-bottom: 86px;
+    }
+    #research {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #UX-research {
+        display: flex;
+    }
+    #aboutPictures p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        padding-right: 125px;
+    }
+    .PhotoPortfolio{
+        padding-top: 0;
+    }
+    .LeftSidePicture img:first-of-type {
+        width: 350px;
+        height: 144px;
+    }
+    .LeftSidePicture img:last-child {
+        width: 349px;
+        height: 233px;
+    }
+    .RightSidePicture img:first-of-type {
+        width: 255px;
+        height: 233px;
+    }
+    .RightSidePicture img:last-child {
+        width: 255px;
+        height: 144px;
+    } 
+    .RightSidePicture{
+        padding-left: 30px;
+    }
+    #GetTouch{
+        text-align: left;
+    }
+    
+    
 }

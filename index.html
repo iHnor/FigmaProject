@@ -10,32 +10,40 @@
 </head>
 
 <body>
-    <div class="HeroSelection">
-        <img src="./image/hamburger.png" id="menu">
+    <section id="HeroSelection">
+        <!-- використати логічний тег за (за прикладом кнопки "Вгору") -->
+        <img src="./image/hamburger.png" id="menuSmall">
         <h1>Portofolio</h1>
+        <div id="menuLarge">
+            <a>Home</a>
+            <a>About</a>
+            <a>Skills</a>
+            <a>Portfolio</a>
+            <a>Contact</a>
+        </div>
         <h3>Hi, It’s Théophile Seyrig</h3>
         <p>Designer from Porto, Portugal</p>
         <p>Latest works</p>
-    </div>
-    <section>
-        <div class="About">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus
-                aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur
-                adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.
-                <br><br>
-                Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum
-                augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas
-                porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in
-                rutrum
-                augue. Pellentesque.
-            </p>
-        </div>
     </section>
+    <section id="About">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus
+            aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur
+            adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.
 
-    <div class="Skills">
-        <h2>Skills</h2>
-        <img src="./image/Profile Picture.png" alt="pictureOfAuthor">
+
+        </p><br>
+        <p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue.
+            Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor
+            nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue.
+            Pellentesque.</p>
+    </section>
+    <section id="Skills">
+        <div id="aboutSkills">
+            <h2>Skills</h2>
+            <img src="./image/Profile Picture.png" alt="pictureOfAuthor">
+        </div>
+        <!-- Використати display:table display:table-cell display:table-row-->
         <table>
             <tr>
                 <td class="profile">
@@ -103,14 +111,18 @@
                 </td>
             </tr>
         </table>
-    </div>
-    <section>
-        <div class="Portfolio">
-            <h2>Portfolio</h2>
-            <p id="research">UX Research</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa
-                sempera tincidunt cursus ultricies lectus eget urna.
-            </p>
+
+    </section>
+    <section id="Portfolio">
+        <h2>Portfolio</h2>
+        <p id="research">UX Research</p>
+        <div id="UX-research">
+            <div id="aboutPictures">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam
+                    massa
+                    sempera tincidunt cursus ultricies lectus eget urna.
+                </p>
+            </div>
             <div class="PhotoPortfolio">
                 <div class="LeftSidePicture">
                     <img src="/image/portoLeftUp.png">
@@ -123,42 +135,36 @@
             </div>
         </div>
     </section>
-    <section>
-    <div class="GetTouch">
+    <section id="GetTouch">
         <h2>Get in Touch</h2>
-        <table>
-            <tr>
-                <td class="Links"><a>Dribbble</a></td>
-                <td class="Links"><a>LinkedIn</a></td>
-            </tr>
-            <tr>
-                <td class="Links"><a>Behance</a></td>
-                <td class="Links"><a>Facebook</a></td>
-            </tr>
-            <tr>
-                <td class="Links"><a>CodePen</a></td>
-                <td class="Links"><a>Instagram</a></td>
-            </tr>
-            <tr>
-                <td class="Links"><a>GitHub</a></td>
-                <td class="Links"><a>Twitter</a></td>
-            </tr>
-            <tr>
-                <td class="Links"><a>Medium</a></td>
-                <td class="Links"></td>
-            </tr>
-        </table>
+        <div id="tmp">
+            <div id="resources">
+                <a>Dribbble</a>
+                <a>Behance</a>
+                <a>CodePen</a>
+                <a>GitHub</a>
+                <a>Medium</a>
+            </div>
 
-        <div class="Contacts">
-            <div class="LeftGroup">
-                <p><a href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></p>
-                <p><a href="tel:+ 55 6645 665544">+ 55 6645 665544</a></p>
+            <div id="social-networks">
+                <a>LinkedIn</a>
+                <a>Facebook</a>
+                <a>Instagram</a>
+                <a>Twitter</a>
             </div>
-            <div class="RightGroup">
-                <img src="./image/uppButton.png">
-            </div>
+
+
+            <footer>
+                <div class="contacts">
+                    <a href="mailto:seyrig@mailme.com">seyrig@mailme.com</a>
+                    <a href="tel:+ 55 6645 665544">+ 55 6645 665544</a>
+                </div>
+                <!-- Довершити використання логічного тегу. Надати фон кнопки  class="icon-up"-->
+
+                <a href="#top"><i class="icon-up"></i>.</a>
+            </footer>
         </div>
-    </section>    
+    </section>
     </div>
 </body>
 
