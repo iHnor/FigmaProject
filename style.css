@@ -74,8 +74,9 @@ section {
 
 #menuSmall {
     width: 24px;
-    padding-top: 6px;
     position: absolute;
+    left: 34px;
+    top: 44px;
 }
 
 .icon-hamburger {
@@ -84,11 +85,6 @@ section {
     height: 24px;
     background-image: url(./image/hamburger.png);
     background-repeat: no-repeat;
-}
-#HeroSelection > a{
-    position: absolute;
-    text-align: left;
-    padding-top: 8px;
 }
 
 #menuLarge {
@@ -132,8 +128,10 @@ section {
     padding-bottom: 41px;
 }
 
-#HeroSelection p:last-of-type {
+#HeroSelection>a {
     text-decoration-line: underline;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 section:nth-child(odd) {
@@ -175,7 +173,7 @@ section:nth-child(odd) {
     text-align: left;
 }
 
-.table-header .item{
+.table-header .item {
     padding-bottom: 35px;
 }
 
@@ -183,6 +181,7 @@ section:nth-child(odd) {
     display: table-cell;
     vertical-align: middle;
     padding-bottom: 9px;
+    
 }
 
 .table-td:nth-child(odd) {
@@ -207,29 +206,12 @@ section:nth-child(odd) {
     z-index: 1;
 }
 
-/* table {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    padding: 0;
-}
-
-.profile {
-    padding-bottom: 35px;
-}
-
-.groupGraph {
-    padding-bottom: 10px;
-}
-
-.groupTools {
-    padding-bottom: 22px;
-}
-*/
-
 #Portfolio {
     text-align: center;
+}
+
+#portfolio-buttons {
+    display: none;
 }
 
 #Portfolio p {
@@ -247,7 +229,7 @@ section:nth-child(odd) {
     padding-bottom: 15px;
 }
 
-.PhotoPortfolio {
+#photoPortfolio {
     display: flex;
     padding-top: 26px;
 }
@@ -365,11 +347,28 @@ footer>a {
         font-size: 18px;
     }
     p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    a {
         font-size: 18px;
-        line-height: 30px;
+        line-height: 22px;
     }
     #menuSmall {
         display: none;
+    }
+    #menuLarge {
+        display: block;
+    }
+    #menuLarge a {
+        padding-left: 60px;
+    }
+    #menuBar {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menuLarge>a:first-child {
+        font-weight: bold;
     }
     section {
         padding-top: 93px;
@@ -378,15 +377,21 @@ footer>a {
         padding-bottom: 115px;
     }
     #HeroSelection {
+        padding-top: 93px;
         height: 768px;
         text-align: left;
     }
     #HeroSelection::before {
         margin-top: -93px;
-        margin-left: -165px;
+        margin-left: -166px;
         margin-right: -168px;
         margin-bottom: -145px;
         background: rgba(198, 108, 73, 0.3);
+    }
+    #HeroSelection>a {
+        text-decoration-line: underline;
+        font-size: 18px;
+        line-height: 22px;
     }
     #HeroSelection h3 {
         padding-top: 145px;
@@ -412,17 +417,48 @@ footer>a {
         margin-right: 125px;
         padding-top: 86px;
     }
-    table {
+    #Skills .table {
         padding-top: 86px;
     }
-    .profile {
-        padding-bottom: 65px;
+    .table p {
+        font-size: 18px;
+        line-height: 25px;
     }
-    .groupGraph, .groupTools {
-        padding-bottom: 20px;
+    .table-td{
+        height: fit-content;
+    }
+    .graph {
+        height: 24px;
+    }
+    .graph>div {
+        height: 24px;
     }
     #Portfolio {
         text-align: left;
+    }
+    #portfolio-buttons {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    #aboutPictures {
+        position: relative;
+    }
+    #portfolio-buttons .icon-left {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./image/leftButton.png);
+        background-repeat: no-repeat;
+        margin-right: 14px;
+    }
+    #portfolio-buttons .icon-right {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./image/rigthButton.png);
+        background-repeat: no-repeat;
     }
     #Portfolio h2 {
         padding-bottom: 86px;
@@ -465,5 +501,25 @@ footer>a {
     }
     #GetTouch {
         text-align: left;
+    }
+    #info {
+        position: relative;
+    }
+    #info div, footer {
+        flex-basis: 0;
+    }
+    #resources {
+        padding-right: 302px;
+    }
+    #social-networks {
+        padding-right: 294px;
+    }
+    footer {
+        align-items: flex-start;
+    }
+    footer>a {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }

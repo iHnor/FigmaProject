@@ -11,18 +11,20 @@
 
 <body>
     <section id="HeroSelection">
-        <a><i class="icon-hamburger"></i></a>
-        <h1>Portofolio</h1>
-        <div id="menuLarge">
-            <a>Home</a>
-            <a>About</a>
-            <a>Skills</a>
-            <a>Portfolio</a>
-            <a>Contact</a>
+        <div id="menuBar">
+            <a id="menuSmall"><i class="icon-hamburger"></i></a>
+            <h1>Portofolio</h1>
+            <div id="menuLarge">
+                <a>Home</a>
+                <a>About</a>
+                <a>Skills</a>
+                <a>Portfolio</a>
+                <a>Contact</a>
+            </div>
         </div>
         <h3>Hi, It’s Théophile Seyrig</h3>
         <p>Designer from Porto, Portugal</p>
-        <p>Latest works</p>
+        <a>Latest works</a>
     </section>
     <section id="About">
         <h2>About</h2>
@@ -65,7 +67,7 @@
                 <div class="table-td">
                     <div class="item">
                         <div class="graph">
-                            <div style="width: 60%"></div>
+                            <div style="width: 89%"></div>
                         </div>
                     </div>
 
@@ -94,7 +96,7 @@
                 <div class="table-td">
                     <div class="item">
                         <div class="graph">
-                            <div style="width: 60%"></div>
+                            <div style="width: 79%"></div>
                         </div>
                     </div>
                 </div>
@@ -141,74 +143,6 @@
                 </div>
             </div>
         </div>
-        <!-- <table>
-            <tr>
-                <td class="profile">
-                    <h4>Profile</h4>
-                </td>
-                <td class="profile">
-                    <p>UI / UX Engineer, Front-end Developer</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupGraph">
-                    <h4>Front-end Dev</h4>
-                </td>
-                <td class="groupGraph">
-                    <div class="graph">
-                        <div style="width: 60%"></div>
-
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupTools">
-                    <h4>Tools</h4>
-                </td>
-                <td class="groupTools">
-                    <p>HTML, CSS, JS, Bootstrap, React</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupGraph">
-                    <h4>UI Design</h4>
-                </td>
-                <td class="groupGraph">
-                    <div class="graph">
-                        <div style="width: 76%"></div>
-
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupTools">
-                    <h4>Tools</h4>
-                </td>
-                <td class="groupTools">
-                    <p>Adobe PS, AI, XD, Figma, InVision</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupGraph">
-                    <h4>UX Research</h4>
-                </td>
-                <td class="groupGraph">
-                    <div class="graph">
-                        <div style="width: 84%"></div>
-
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="groupTools">
-                    <h4>Tools</h4>
-                </td>
-                <td class="groupTools">
-                    <p>Paper, Pen, Balsamiq</p>
-                </td>
-            </tr>
-        </table> -->
-
     </section>
     <section id="Portfolio">
         <h2>Portfolio</h2>
@@ -219,8 +153,12 @@
                     massa
                     sempera tincidunt cursus ultricies lectus eget urna.
                 </p>
+                <div id="portfolio-buttons">
+                    <a><i class="icon-left"></i></a>
+                    <a><i class="icon-right"></i></a>
+                </div>
             </div>
-            <div class="PhotoPortfolio">
+            <div id="photoPortfolio">
                 <div class="LeftSidePicture">
                     <img src="/image/portoLeftUp.png">
                     <img src="/image/portoLeftDown.png">
@@ -230,6 +168,7 @@
                     <img src="/image/PortoRigthTop.png">
                 </div>
             </div>
+
         </div>
     </section>
     <section id="GetTouch">
