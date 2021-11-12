@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -65,7 +66,7 @@ p {
 }
 
 section {
-    padding-top: 36px;
+    padding-top: 25px;
     padding-left: 34px;
     padding-right: 34px;
     padding-bottom: 24px;
@@ -77,12 +78,17 @@ section {
     position: absolute;
 }
 
-a .icon-hamburger {
+.icon-hamburger {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     background-image: url(./image/hamburger.png);
-    background-size: 24px;
-    /* background-size: auto; */
-    padding-top: 6px;
-    /* position: absolute; */
+    background-repeat: no-repeat;
+}
+#HeroSelection > a{
+    position: absolute;
+    text-align: left;
+    padding-top: 8px;
 }
 
 #menuLarge {
@@ -94,6 +100,7 @@ a .icon-hamburger {
     position: relative;
     background-position: center;
     background-size: cover;
+    padding-top: 36px;
     width: 100%;
     height: 275px;
     z-index: -2;
@@ -156,7 +163,51 @@ section:nth-child(odd) {
     padding-bottom: 26px;
 }
 
-table {
+.table {
+    display: table;
+    width: 100%;
+    border: none;
+    border-collapse: separate;
+}
+
+.table-tr {
+    display: table-row;
+    text-align: left;
+}
+
+.table-header .item{
+    padding-bottom: 35px;
+}
+
+.table-td {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 9px;
+}
+
+.table-td:nth-child(odd) {
+    width: 28%;
+}
+
+.table p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.graph {
+    display: block;
+    background: #F5D6AB;
+    height: 18px;
+    z-index: 0;
+}
+
+.graph>div {
+    background: #C66C49;
+    height: 18px;
+    z-index: 1;
+}
+
+/* table {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -175,19 +226,7 @@ table {
 .groupTools {
     padding-bottom: 22px;
 }
-
-.graph {
-    display: block;
-    background: #F5D6AB;
-    height: 18px;
-    z-index: 0;
-}
-
-.graph>div {
-    background: #C66C49;
-    height: 18px;
-    z-index: 1;
-}
+*/
 
 #Portfolio {
     text-align: center;
@@ -259,33 +298,39 @@ table {
     padding-bottom: 20px;
 }
 
+#info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #resources {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-    float: left;
+    flex-basis: 50%;
 }
 
 #social-networks {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-    float: left;
+    flex-basis: 50%;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    clear: left;
+    flex-basis: 100%;
 }
 
-/* a .icon-up{
+footer>a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     background-image: url(./image/uppButton.png);
-    background-size: 24px;
-} */
+    background-repeat: no-repeat;
+}
 
 .contacts:first-child {
     padding-top: 10px;
@@ -326,15 +371,6 @@ footer {
     #menuSmall {
         display: none;
     }
-    /* #menuLarge {
-        display: block;        
-        float: right;
-    }
-    #menuLarge a {
-        font-size: 18px;
-        line-height: 22px;
-        padding-left: 60px;
-    } */
     section {
         padding-top: 93px;
         padding-left: 166px;
@@ -399,13 +435,13 @@ footer {
     #UX-research {
         display: flex;
     }
-    #aboutPictures p{
+    #aboutPictures p {
         font-size: 18px;
         line-height: 30px;
         text-align: justify;
         padding-right: 125px;
     }
-    .PhotoPortfolio{
+    .PhotoPortfolio {
         padding-top: 0;
     }
     .LeftSidePicture img:first-of-type {
@@ -423,13 +459,11 @@ footer {
     .RightSidePicture img:last-child {
         width: 255px;
         height: 144px;
-    } 
-    .RightSidePicture{
+    }
+    .RightSidePicture {
         padding-left: 30px;
     }
-    #GetTouch{
+    #GetTouch {
         text-align: left;
     }
-    
-    
 }
